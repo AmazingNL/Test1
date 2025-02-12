@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Array_of_Custom_Objects
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -15,9 +19,9 @@ namespace Array_of_Custom_Objects
             Person[] person = new Person[3];
             for (int i = 0; i < person.Length; i++)
             {
-                Console.Write($"Enter a name for person {i+1}");
+                Console.Write($"Enter a name for person {i+1}: ");
                 string name = Console.ReadLine();
-                Console.Write($"Enter age for person {i + 1}");
+                Console.Write($"Enter age for person {i + 1}: ");
                 int age = int.Parse(Console.ReadLine());
                 person[i] = new Person(name, age);
             }
