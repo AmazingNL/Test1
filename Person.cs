@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Array_of_Custom_Objects
 {
-    internal class Person
+    public class Person
     {
         public Person(string name, int age, string city)
         {
