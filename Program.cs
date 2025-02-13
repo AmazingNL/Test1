@@ -15,11 +15,13 @@ namespace Array_of_Custom_Objects
             Person[] person = new Person[3];
             for (int i = 0; i < person.Length; i++)
             {
-                Console.Write($"Enter a name for person {i+1}");
+                Console.Write($"Enter a name for person {i+1}: ");
                 string name = Console.ReadLine();
-                Console.Write($"Enter age for person {i + 1}");
+                Console.Write($"Enter age for person {i + 1}: ");
                 int age = int.Parse(Console.ReadLine());
                 person[i] = new Person(name, age);
+		Console.Write($"Enter City name for person {i+1}: ");
+		string city = Console.ReadLine();
             }
             
             PrintPersonArray( person );

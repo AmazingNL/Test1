@@ -8,14 +8,16 @@ namespace Array_of_Custom_Objects
 {
     internal class Person
     {
-        public Person(string name, int age)
+        public Person(string name, int age, string city)
         {
             Name = name;
             Age = age;
+	    City = city;
         }
 
         public string Name { get; set; } 
         public int Age { get; set; }
+	public string City {get; set}
 
         public void DisplayPersonInfo()
         {
